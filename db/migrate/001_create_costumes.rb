@@ -1,10 +1,15 @@
 # Create a class and inherit from ActiveRecord::Migration
 
+<<<<<<< HEAD
 class CreateCostumes < ActiveRecord::Migration[4.2]
+=======
+class CreateCostumes < ActiveRecord::Migration
+>>>>>>> c6326d15dda5f04c7a222a2ecee1930a5c3bf9b8
   
   def change 
    create_table :costumes do |t|
      t.string :name 
+<<<<<<< HEAD
      t.float :price 
      t.string :size 
      t.string :image_url
@@ -13,6 +18,13 @@ class CreateCostumes < ActiveRecord::Migration[4.2]
   end 
 end 
 end 
+=======
+     t.integer :price 
+     t.string :size 
+     t.string :image_url
+  end 
+end 
+>>>>>>> c6326d15dda5f04c7a222a2ecee1930a5c3bf9b8
 
 # By convention, the class name should match the part of the
 # file name after the number, so in this case:
